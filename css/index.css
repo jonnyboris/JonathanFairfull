@@ -1,0 +1,47 @@
+.top {
+  margin-top: 40px; }
+
+.profile {
+  border-radius: 100%;
+  max-width: 150px;
+  transform: scale(0);
+  animation: popIn 0.6s cubic-bezier(0.45, 0.75, 0, 0.61) forwards;
+  animation-delay: 0.6s; }
+
+.intro {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 1.2s; }
+
+.profileLinks a {
+  font-size: 3.2rem;
+  margin: 5px;
+  color: #404040;
+  transition: color 0.4s ease;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 1.4s; }
+.profileLinks a:hover {
+  color: #000; }
+
+.pageLinks {
+  margin: 5px 0; }
+  .pageLinks a {
+    display: inline-block;
+    margin: 0 4px;
+    font-size: 2rem; }
+
+@keyframes popIn {
+  0% {
+    transform: scale(0); }
+  70% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=index.css.map */

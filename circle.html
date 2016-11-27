@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .svgCircle {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 1s cubic-bezier(1,-0.15, 1, 0.5) forwards;
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .circleContainer {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<svg class="circleContainer" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <title>Layer 1</title>
+        <path id="circle" class="svgCircle" d="m86.5,202.5c0,-59.944751 48.555249,-108.5 108.5,-108.5c59.944751,0 108.5,48.555249 108.5,108.5c0,59.944751 -48.555249,108.5 -108.5,108.5c-59.944751,0 -108.5,-48.555249 -108.5,-108.5z" stroke-linecap="undefined" stroke-linejoin="undefined" stroke-width="6" stroke="#000" fill="transparent"/>
+    </g>
+</svg>
+
+<div class="col-xs-12 pageLinks text-center">
+    <a href="">Projects</a>
+    <a href="">CV</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+</div>
+
+</body>
+</html>
